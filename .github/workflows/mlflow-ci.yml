@@ -42,7 +42,7 @@ jobs:
       - name: Build Docker Image using MLflow build-docker (Advance Level)
         run: |
           cd MLProject
-          mlflow models build-docker -m model_dir -n ${{ secrets.DUCKER_USERNAME }}/house-rent-model:latest
+          mlflow models build-docker -m model -n ${{ secrets.DUCKER_USERNAME }}/house-rent-model:latest
 
       - name: Push Image to Docker Hub
         run: |
