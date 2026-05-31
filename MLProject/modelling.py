@@ -6,7 +6,7 @@ import shutil
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 
-mlflow.set_tracking_uri("file://" + os.path.abspath("mlruns_temp"))
+#mlflow.set_tracking_uri("file://" + os.path.abspath("mlruns_temp"))
 
 # Load Data
 df = pd.read_csv('Data Prepocessing.csv')
