@@ -21,8 +21,8 @@ with mlflow.start_run(run_name="CI_Automated_Run"):
     model.fit(X_train, y_train)
 
     # Siapkan folder
-    if os.path.exists("model_dir"):
-        shutil.rmtree("model_dir")
+    if os.path.exists("model"):
+        shutil.rmtree("model")
 
-    mlflow.sklearn.save_model(model, "model_dir")
+    mlflow.sklearn.save_model(model, "model")
     print("Training selesai dan model fisik disimpan di model_dir")
